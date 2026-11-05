@@ -5,8 +5,7 @@ figures, videos, and the PDF stored locally; it has no build step, runtime depen
 or analytics. Outbound links are limited to the hosts in `ALLOWED_LINK_HOSTS` in
 `scripts/validate_site.py`.
 
-**Pending until the arXiv version exists:** the author line (a commented template sits in the title
-block of `index.html`), the arXiv button (currently a grey “coming soon” pill), the arXiv BibTeX entry,
+**Pending until the arXiv version exists:** the arXiv button (currently a grey “coming soon” pill), the arXiv BibTeX entry,
 and the PDF button. `assets/paper.pdf` is the anonymous review version; it stays in the repository
 because the contact-chart data is verified against it, but the page does not link it. To add the arXiv
 PDF, see “Replacing the PDF”. If you mark something as unfinished with a `TODO-NAME` marker, validation

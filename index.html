@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
+  <meta name="author" content="Yixiao Wang, Peiyi Chen, Mustafa Mukadam, Shreekant Gayaka, Masayoshi Tomizuka, Son Tran">
   <meta name="color-scheme" content="light">
   <meta name="description" content="Latent RL Prior distills large-scale reinforcement-learning rollouts into a frozen flow-matching action decoder and adapts it to visual dexterous manipulation by learning only a visual interface from limited demonstrations.">
   <meta property="og:title" content="Latent RL Priors for Data-Efficient Dexterous Manipulation">
@@ -21,9 +22,8 @@
   <header class="hero" id="top">
     <div class="container">
       <h1>Latent RL Priors for Data‑Efficient Dexterous Manipulation</h1>
-      <!-- Author line (add when ready), placed here:
-           <p class="authors">Name<sup>1,*</sup>, Name<sup>1,*</sup>, Name<sup>2</sup></p>
-           <p class="affils"><span><sup>1</sup>University</span> <span><sup>2</sup>Institute</span> <span><sup>*</sup>Equal contribution</span></p> -->
+      <p class="authors"><span>Yixiao Wang<sup>1,†</sup></span>, <span>Peiyi Chen<sup>2</sup></span>, <span>Mustafa Mukadam<sup>2</sup></span>, <span>Shreekant Gayaka<sup>2</sup></span>, <span>Masayoshi Tomizuka<sup>1</sup></span>, <span>Son Tran<sup>2</sup></span></p>
+      <p class="affils"><span><sup>1</sup>University of California, Berkeley</span> <span><sup>2</sup>Amazon</span> <span><sup>†</sup>Work done during an internship at Amazon</span></p>
       <p class="venue"><span class="venue-badge">Preprint · 2026</span></p>
       <div class="links">
         <span class="link-pending" title="Release planned"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v5h4M9 12h6M9 16h6"/></svg>arXiv <small>coming soon</small></span>
@@ -95,7 +95,7 @@
 
       <h3>Abstract</h3>
       <div class="panel abstract-panel">
-        <p>Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning (RL) in simulation can acquire rich control behaviors from large-scale interaction with privileged information. We introduce Latent RL Prior, a two-stage framework that reuses this control knowledge for data-efficient visual policy learning. During privileged pretraining, we distill large-scale RL rollouts into a flow-matching action decoder conditioned on proprioception and latent task context. During visual adaptation, we freeze the decoder and learn a visual interface that maps images to its latent context using action supervision alone, without privileged labels or latent targets. The same decoder can further be shared across arms by learning coordinated visual contexts for bimanual manipulation. Across three simulated tasks, our method outperforms full-parameter fine-tuning of π<sub>0.5</sub> and GR00T N1.7 in the low-data regime; on door lifting and bimanual assembly, it surpasses full-data baselines using 10× and 5× fewer demonstrations, respectively. Further analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder. Robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge. Training and evaluation code and datasets will be released.</p>
+        <p>Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning (RL) in simulation can acquire rich control behaviors from large-scale interaction with privileged information. We introduce Latent RL Prior, a two-stage framework that reuses this control knowledge for data-efficient visual policy learning. During privileged pretraining, we distill large-scale RL rollouts into a flow-matching action decoder conditioned on proprioception and latent task context. During visual adaptation, we freeze the decoder and learn a visual interface that maps images to its latent context using action supervision alone, without privileged labels or latent targets. The same decoder can further be shared across arms by learning coordinated visual contexts for bimanual manipulation. Across three simulated tasks, our method outperforms full-parameter fine-tuning of π<sub>0.5</sub> and GR00T N1.7 in the low-data regime; on door lifting and bimanual assembly, it surpasses full-data baselines using 10× and 5× fewer demonstrations, respectively. Further analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder. Robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge.</p>
       </div>
 
       <h3>Contributions</h3>
@@ -404,10 +404,12 @@
       <p>If you find this work useful, please cite it. This entry will be replaced with the arXiv citation once the paper is posted.</p>
       <div class="panel bibtex-block">
         <button id="copy-citation" type="button">Copy</button>
-        <pre id="citation-text">@misc{latentrlprior2026,
-  title = {Latent RL Priors for Data-Efficient Dexterous Manipulation},
-  year  = {2026},
-  note  = {Preprint; arXiv version forthcoming}
+        <pre id="citation-text">@misc{wang2026latent,
+  title  = {Latent RL Priors for Data-Efficient Dexterous Manipulation},
+  author = {Yixiao Wang and Peiyi Chen and Mustafa Mukadam and
+            Shreekant Gayaka and Masayoshi Tomizuka and Son Tran},
+  year   = {2026},
+  note   = {Preprint; arXiv version forthcoming}
 }</pre>
       </div>
       <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>

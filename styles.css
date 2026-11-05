@@ -73,6 +73,7 @@ b, strong { font-weight: 650; }
 .hero h1 { font-size: var(--fs-h1); font-weight: 700; line-height: 1.25; letter-spacing: -.01em; max-width: 880px; margin: 0 auto 16px; text-wrap: balance; }
 .authors { max-width: 860px; margin-inline: auto; font-size: var(--fs-base); font-weight: 500; text-wrap: balance; }
 .authors sup, .affils sup { color: var(--accent); }
+.authors > span { white-space: nowrap; }
 .affils { max-width: 860px; margin: 2px auto 0; font-size: var(--fs-sm); color: var(--muted); text-wrap: balance; }
 .affils > span { white-space: nowrap; }
 .affils > span + span { margin-left: 14px; }

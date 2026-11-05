@@ -23,7 +23,9 @@ estimated from pixels or reconstructed into synthetic curves.
 | Dataset sizes, arm–hand systems, and cameras | Section 4.1; Table 1 |
 | Baselines, training steps, and evaluation protocol | Section 4.1 |
 | Limitations list | Section 5 |
-| Planned code and dataset release | Abstract and reproducibility statement |
+| Author list, affiliations, and internship note | Preprint title block (`\iclrpreprintcopy`) |
+| Abstract text | Abstract (preprint version, without the trailing project-website link) |
+| Planned code and dataset release | Reproducibility statement |
 
 ## Implementation cross-check
 
