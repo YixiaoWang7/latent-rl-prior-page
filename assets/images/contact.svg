@@ -1,0 +1,472 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 960" role="img" aria-labelledby="title desc">
+<title id="title">Contact-force readout across decoder layers</title>
+<desc id="desc">Figure 9 numerical results. Four force targets and five demonstration budgets. Solid curves are the RL prior; dashed curves are the scratch decoder. Lower RMSE is better.</desc>
+<rect width="1360" height="960" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#202a29">
+<text x="60" y="46" font-size="30" font-weight="600">Contact forces are easier to read out.</text>
+<text x="60" y="77" font-size="17" fill="#596764">Mean over three policy seeds · RMSE in newtons · Lower is better</text>
+<text x="60" y="117" font-size="16" >Visual demonstrations</text>
+<path d="M250 111h28" stroke="#60398b" stroke-width="3"/>
+<text x="286" y="117" font-size="16" >200</text>
+<path d="M373 111h28" stroke="#3b679b" stroke-width="3"/>
+<text x="409" y="117" font-size="16" >500</text>
+<path d="M496 111h28" stroke="#19877e" stroke-width="3"/>
+<text x="532" y="117" font-size="16" >1,000</text>
+<path d="M619 111h28" stroke="#429457" stroke-width="3"/>
+<text x="655" y="117" font-size="16" >2,000</text>
+<path d="M742 111h28" stroke="#758d19" stroke-width="3"/>
+<text x="778" y="117" font-size="16" >4,000</text>
+<path d="M925 111h35" stroke="#354740" stroke-width="3"/>
+<text x="969" y="117" font-size="16" >RL prior</text>
+<path d="M1080 111h35" stroke="#354740" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="1124" y="117" font-size="16" >Scratch decoder</text>
+<text x="60" y="175" font-size="23" font-weight="600">Total grasp force</text>
+<text x="60" y="200" font-size="14" fill="#596764">RMSE (N)</text>
+<path d="M113 450.531H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="456.531" font-size="16" text-anchor="end" fill="#596764">9.5</text>
+<path d="M113 413.188H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="419.188" font-size="16" text-anchor="end" fill="#596764">10.0</text>
+<path d="M113 375.844H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="381.844" font-size="16" text-anchor="end" fill="#596764">10.5</text>
+<path d="M113 338.500H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="344.5" font-size="16" text-anchor="end" fill="#596764">11.0</text>
+<path d="M113 301.156H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="307.156" font-size="16" text-anchor="end" fill="#596764">11.5</text>
+<path d="M113 263.812H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="269.812" font-size="16" text-anchor="end" fill="#596764">12.0</text>
+<path d="M113 226.469H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="232.469" font-size="16" text-anchor="end" fill="#596764">12.5</text>
+<text x="113.0" y="485" font-size="16" text-anchor="middle" fill="#596764">L1</text>
+<text x="186.857" y="485" font-size="16" text-anchor="middle" fill="#596764">L2</text>
+<text x="260.714" y="485" font-size="16" text-anchor="middle" fill="#596764">L3</text>
+<text x="334.571" y="485" font-size="16" text-anchor="middle" fill="#596764">L4</text>
+<text x="408.429" y="485" font-size="16" text-anchor="middle" fill="#596764">L5</text>
+<text x="482.286" y="485" font-size="16" text-anchor="middle" fill="#596764">L6</text>
+<text x="556.143" y="485" font-size="16" text-anchor="middle" fill="#596764">L7</text>
+<text x="630.0" y="485" font-size="16" text-anchor="middle" fill="#596764">L8</text>
+<text x="371.5" y="515" font-size="16" text-anchor="middle" fill="#596764">Action-decoder layer</text>
+<path d="M113.000 245.960 L186.857 275.582 L260.714 290.409 L334.571 288.991 L408.429 294.026 L482.286 289.175 L556.143 287.178 L630.000 287.408" fill="none" stroke="#60398b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="245.960" r="2.6" fill="#60398b"/>
+<circle cx="186.857" cy="275.582" r="2.6" fill="#60398b"/>
+<circle cx="260.714" cy="290.409" r="2.6" fill="#60398b"/>
+<circle cx="334.571" cy="288.991" r="2.6" fill="#60398b"/>
+<circle cx="408.429" cy="294.026" r="2.6" fill="#60398b"/>
+<circle cx="482.286" cy="289.175" r="2.6" fill="#60398b"/>
+<circle cx="556.143" cy="287.178" r="2.6" fill="#60398b"/>
+<circle cx="630.000" cy="287.408" r="2.6" fill="#60398b"/>
+<path d="M113.000 331.424 L186.857 369.759 L260.714 404.599 L334.571 415.469 L408.429 408.070 L482.286 396.241 L556.143 381.810 L630.000 371.397" fill="none" stroke="#60398b" stroke-width="2.4"/>
+<circle cx="113.000" cy="331.424" r="2.6" fill="#60398b"/>
+<circle cx="186.857" cy="369.759" r="2.6" fill="#60398b"/>
+<circle cx="260.714" cy="404.599" r="2.6" fill="#60398b"/>
+<circle cx="334.571" cy="415.469" r="2.6" fill="#60398b"/>
+<circle cx="408.429" cy="408.070" r="2.6" fill="#60398b"/>
+<circle cx="482.286" cy="396.241" r="2.6" fill="#60398b"/>
+<circle cx="556.143" cy="381.810" r="2.6" fill="#60398b"/>
+<circle cx="630.000" cy="371.397" r="2.6" fill="#60398b"/>
+<path d="M113.000 265.848 L186.857 300.494 L260.714 317.753 L334.571 317.331 L408.429 317.489 L482.286 312.928 L556.143 313.053 L630.000 306.745" fill="none" stroke="#3b679b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="265.848" r="2.6" fill="#3b679b"/>
+<circle cx="186.857" cy="300.494" r="2.6" fill="#3b679b"/>
+<circle cx="260.714" cy="317.753" r="2.6" fill="#3b679b"/>
+<circle cx="334.571" cy="317.331" r="2.6" fill="#3b679b"/>
+<circle cx="408.429" cy="317.489" r="2.6" fill="#3b679b"/>
+<circle cx="482.286" cy="312.928" r="2.6" fill="#3b679b"/>
+<circle cx="556.143" cy="313.053" r="2.6" fill="#3b679b"/>
+<circle cx="630.000" cy="306.745" r="2.6" fill="#3b679b"/>
+<path d="M113.000 334.179 L186.857 370.129 L260.714 410.752 L334.571 415.207 L408.429 412.879 L482.286 396.304 L556.143 380.993 L630.000 372.274" fill="none" stroke="#3b679b" stroke-width="2.4"/>
+<circle cx="113.000" cy="334.179" r="2.6" fill="#3b679b"/>
+<circle cx="186.857" cy="370.129" r="2.6" fill="#3b679b"/>
+<circle cx="260.714" cy="410.752" r="2.6" fill="#3b679b"/>
+<circle cx="334.571" cy="415.207" r="2.6" fill="#3b679b"/>
+<circle cx="408.429" cy="412.879" r="2.6" fill="#3b679b"/>
+<circle cx="482.286" cy="396.304" r="2.6" fill="#3b679b"/>
+<circle cx="556.143" cy="380.993" r="2.6" fill="#3b679b"/>
+<circle cx="630.000" cy="372.274" r="2.6" fill="#3b679b"/>
+<path d="M113.000 278.170 L186.857 325.007 L260.714 333.833 L334.571 337.403 L408.429 337.332 L482.286 335.235 L556.143 329.155 L630.000 316.825" fill="none" stroke="#19877e" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="278.170" r="2.6" fill="#19877e"/>
+<circle cx="186.857" cy="325.007" r="2.6" fill="#19877e"/>
+<circle cx="260.714" cy="333.833" r="2.6" fill="#19877e"/>
+<circle cx="334.571" cy="337.403" r="2.6" fill="#19877e"/>
+<circle cx="408.429" cy="337.332" r="2.6" fill="#19877e"/>
+<circle cx="482.286" cy="335.235" r="2.6" fill="#19877e"/>
+<circle cx="556.143" cy="329.155" r="2.6" fill="#19877e"/>
+<circle cx="630.000" cy="316.825" r="2.6" fill="#19877e"/>
+<path d="M113.000 338.012 L186.857 380.821 L260.714 414.738 L334.571 420.600 L408.429 419.048 L482.286 409.462 L556.143 393.243 L630.000 383.138" fill="none" stroke="#19877e" stroke-width="2.4"/>
+<circle cx="113.000" cy="338.012" r="2.6" fill="#19877e"/>
+<circle cx="186.857" cy="380.821" r="2.6" fill="#19877e"/>
+<circle cx="260.714" cy="414.738" r="2.6" fill="#19877e"/>
+<circle cx="334.571" cy="420.600" r="2.6" fill="#19877e"/>
+<circle cx="408.429" cy="419.048" r="2.6" fill="#19877e"/>
+<circle cx="482.286" cy="409.462" r="2.6" fill="#19877e"/>
+<circle cx="556.143" cy="393.243" r="2.6" fill="#19877e"/>
+<circle cx="630.000" cy="383.138" r="2.6" fill="#19877e"/>
+<path d="M113.000 276.916 L186.857 328.488 L260.714 345.879 L334.571 355.700 L408.429 349.959 L482.286 354.669 L556.143 349.159 L630.000 343.075" fill="none" stroke="#429457" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="276.916" r="2.6" fill="#429457"/>
+<circle cx="186.857" cy="328.488" r="2.6" fill="#429457"/>
+<circle cx="260.714" cy="345.879" r="2.6" fill="#429457"/>
+<circle cx="334.571" cy="355.700" r="2.6" fill="#429457"/>
+<circle cx="408.429" cy="349.959" r="2.6" fill="#429457"/>
+<circle cx="482.286" cy="354.669" r="2.6" fill="#429457"/>
+<circle cx="556.143" cy="349.159" r="2.6" fill="#429457"/>
+<circle cx="630.000" cy="343.075" r="2.6" fill="#429457"/>
+<path d="M113.000 345.171 L186.857 384.034 L260.714 422.394 L334.571 428.914 L408.429 429.681 L482.286 415.841 L556.143 402.581 L630.000 391.029" fill="none" stroke="#429457" stroke-width="2.4"/>
+<circle cx="113.000" cy="345.171" r="2.6" fill="#429457"/>
+<circle cx="186.857" cy="384.034" r="2.6" fill="#429457"/>
+<circle cx="260.714" cy="422.394" r="2.6" fill="#429457"/>
+<circle cx="334.571" cy="428.914" r="2.6" fill="#429457"/>
+<circle cx="408.429" cy="429.681" r="2.6" fill="#429457"/>
+<circle cx="482.286" cy="415.841" r="2.6" fill="#429457"/>
+<circle cx="556.143" cy="402.581" r="2.6" fill="#429457"/>
+<circle cx="630.000" cy="391.029" r="2.6" fill="#429457"/>
+<path d="M113.000 301.777 L186.857 347.810 L260.714 363.667 L334.571 373.048 L408.429 376.549 L482.286 375.182 L556.143 374.997 L630.000 367.641" fill="none" stroke="#758d19" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="301.777" r="2.6" fill="#758d19"/>
+<circle cx="186.857" cy="347.810" r="2.6" fill="#758d19"/>
+<circle cx="260.714" cy="363.667" r="2.6" fill="#758d19"/>
+<circle cx="334.571" cy="373.048" r="2.6" fill="#758d19"/>
+<circle cx="408.429" cy="376.549" r="2.6" fill="#758d19"/>
+<circle cx="482.286" cy="375.182" r="2.6" fill="#758d19"/>
+<circle cx="556.143" cy="374.997" r="2.6" fill="#758d19"/>
+<circle cx="630.000" cy="367.641" r="2.6" fill="#758d19"/>
+<path d="M113.000 350.095 L186.857 390.693 L260.714 434.185 L334.571 438.406 L408.429 437.117 L482.286 424.232 L556.143 409.445 L630.000 395.278" fill="none" stroke="#758d19" stroke-width="2.4"/>
+<circle cx="113.000" cy="350.095" r="2.6" fill="#758d19"/>
+<circle cx="186.857" cy="390.693" r="2.6" fill="#758d19"/>
+<circle cx="260.714" cy="434.185" r="2.6" fill="#758d19"/>
+<circle cx="334.571" cy="438.406" r="2.6" fill="#758d19"/>
+<circle cx="408.429" cy="437.117" r="2.6" fill="#758d19"/>
+<circle cx="482.286" cy="424.232" r="2.6" fill="#758d19"/>
+<circle cx="556.143" cy="409.445" r="2.6" fill="#758d19"/>
+<circle cx="630.000" cy="395.278" r="2.6" fill="#758d19"/>
+<text x="720" y="175" font-size="23" font-weight="600">Normal force</text>
+<text x="720" y="200" font-size="14" fill="#596764">RMSE (N)</text>
+<path d="M773 445.421H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="451.421" font-size="16" text-anchor="end" fill="#596764">3.8</text>
+<path d="M773 395.105H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="401.105" font-size="16" text-anchor="end" fill="#596764">4.0</text>
+<path d="M773 344.789H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="350.789" font-size="16" text-anchor="end" fill="#596764">4.2</text>
+<path d="M773 294.474H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="300.474" font-size="16" text-anchor="end" fill="#596764">4.4</text>
+<path d="M773 244.158H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="250.158" font-size="16" text-anchor="end" fill="#596764">4.6</text>
+<text x="773.0" y="485" font-size="16" text-anchor="middle" fill="#596764">L1</text>
+<text x="846.857" y="485" font-size="16" text-anchor="middle" fill="#596764">L2</text>
+<text x="920.714" y="485" font-size="16" text-anchor="middle" fill="#596764">L3</text>
+<text x="994.571" y="485" font-size="16" text-anchor="middle" fill="#596764">L4</text>
+<text x="1068.429" y="485" font-size="16" text-anchor="middle" fill="#596764">L5</text>
+<text x="1142.286" y="485" font-size="16" text-anchor="middle" fill="#596764">L6</text>
+<text x="1216.143" y="485" font-size="16" text-anchor="middle" fill="#596764">L7</text>
+<text x="1290.0" y="485" font-size="16" text-anchor="middle" fill="#596764">L8</text>
+<text x="1031.5" y="515" font-size="16" text-anchor="middle" fill="#596764">Action-decoder layer</text>
+<path d="M773.000 243.191 L846.857 281.384 L920.714 289.128 L994.571 292.911 L1068.429 291.984 L1142.286 285.323 L1216.143 281.611 L1290.000 277.715" fill="none" stroke="#60398b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="243.191" r="2.6" fill="#60398b"/>
+<circle cx="846.857" cy="281.384" r="2.6" fill="#60398b"/>
+<circle cx="920.714" cy="289.128" r="2.6" fill="#60398b"/>
+<circle cx="994.571" cy="292.911" r="2.6" fill="#60398b"/>
+<circle cx="1068.429" cy="291.984" r="2.6" fill="#60398b"/>
+<circle cx="1142.286" cy="285.323" r="2.6" fill="#60398b"/>
+<circle cx="1216.143" cy="281.611" r="2.6" fill="#60398b"/>
+<circle cx="1290.000" cy="277.715" r="2.6" fill="#60398b"/>
+<path d="M773.000 325.493 L846.857 369.089 L920.714 404.876 L994.571 411.181 L1068.429 406.329 L1142.286 394.694 L1216.143 383.579 L1290.000 372.966" fill="none" stroke="#60398b" stroke-width="2.4"/>
+<circle cx="773.000" cy="325.493" r="2.6" fill="#60398b"/>
+<circle cx="846.857" cy="369.089" r="2.6" fill="#60398b"/>
+<circle cx="920.714" cy="404.876" r="2.6" fill="#60398b"/>
+<circle cx="994.571" cy="411.181" r="2.6" fill="#60398b"/>
+<circle cx="1068.429" cy="406.329" r="2.6" fill="#60398b"/>
+<circle cx="1142.286" cy="394.694" r="2.6" fill="#60398b"/>
+<circle cx="1216.143" cy="383.579" r="2.6" fill="#60398b"/>
+<circle cx="1290.000" cy="372.966" r="2.6" fill="#60398b"/>
+<path d="M773.000 275.748 L846.857 317.236 L920.714 334.184 L994.571 333.119 L1068.429 329.182 L1142.286 324.390 L1216.143 315.877 L1290.000 306.757" fill="none" stroke="#3b679b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="275.748" r="2.6" fill="#3b679b"/>
+<circle cx="846.857" cy="317.236" r="2.6" fill="#3b679b"/>
+<circle cx="920.714" cy="334.184" r="2.6" fill="#3b679b"/>
+<circle cx="994.571" cy="333.119" r="2.6" fill="#3b679b"/>
+<circle cx="1068.429" cy="329.182" r="2.6" fill="#3b679b"/>
+<circle cx="1142.286" cy="324.390" r="2.6" fill="#3b679b"/>
+<circle cx="1216.143" cy="315.877" r="2.6" fill="#3b679b"/>
+<circle cx="1290.000" cy="306.757" r="2.6" fill="#3b679b"/>
+<path d="M773.000 327.739 L846.857 374.131 L920.714 408.721 L994.571 416.125 L1068.429 411.520 L1142.286 397.538 L1216.143 385.258 L1290.000 375.926" fill="none" stroke="#3b679b" stroke-width="2.4"/>
+<circle cx="773.000" cy="327.739" r="2.6" fill="#3b679b"/>
+<circle cx="846.857" cy="374.131" r="2.6" fill="#3b679b"/>
+<circle cx="920.714" cy="408.721" r="2.6" fill="#3b679b"/>
+<circle cx="994.571" cy="416.125" r="2.6" fill="#3b679b"/>
+<circle cx="1068.429" cy="411.520" r="2.6" fill="#3b679b"/>
+<circle cx="1142.286" cy="397.538" r="2.6" fill="#3b679b"/>
+<circle cx="1216.143" cy="385.258" r="2.6" fill="#3b679b"/>
+<circle cx="1290.000" cy="375.926" r="2.6" fill="#3b679b"/>
+<path d="M773.000 292.997 L846.857 343.322 L920.714 362.004 L994.571 362.822 L1068.429 354.916 L1142.286 348.531 L1216.143 339.435 L1290.000 324.877" fill="none" stroke="#19877e" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="292.997" r="2.6" fill="#19877e"/>
+<circle cx="846.857" cy="343.322" r="2.6" fill="#19877e"/>
+<circle cx="920.714" cy="362.004" r="2.6" fill="#19877e"/>
+<circle cx="994.571" cy="362.822" r="2.6" fill="#19877e"/>
+<circle cx="1068.429" cy="354.916" r="2.6" fill="#19877e"/>
+<circle cx="1142.286" cy="348.531" r="2.6" fill="#19877e"/>
+<circle cx="1216.143" cy="339.435" r="2.6" fill="#19877e"/>
+<circle cx="1290.000" cy="324.877" r="2.6" fill="#19877e"/>
+<path d="M773.000 332.878 L846.857 379.742 L920.714 414.282 L994.571 422.305 L1068.429 417.118 L1142.286 407.245 L1216.143 397.280 L1290.000 387.813" fill="none" stroke="#19877e" stroke-width="2.4"/>
+<circle cx="773.000" cy="332.878" r="2.6" fill="#19877e"/>
+<circle cx="846.857" cy="379.742" r="2.6" fill="#19877e"/>
+<circle cx="920.714" cy="414.282" r="2.6" fill="#19877e"/>
+<circle cx="994.571" cy="422.305" r="2.6" fill="#19877e"/>
+<circle cx="1068.429" cy="417.118" r="2.6" fill="#19877e"/>
+<circle cx="1142.286" cy="407.245" r="2.6" fill="#19877e"/>
+<circle cx="1216.143" cy="397.280" r="2.6" fill="#19877e"/>
+<circle cx="1290.000" cy="387.813" r="2.6" fill="#19877e"/>
+<path d="M773.000 290.250 L846.857 340.817 L920.714 363.585 L994.571 373.698 L1068.429 374.041 L1142.286 369.788 L1216.143 363.176 L1290.000 353.515" fill="none" stroke="#429457" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="290.250" r="2.6" fill="#429457"/>
+<circle cx="846.857" cy="340.817" r="2.6" fill="#429457"/>
+<circle cx="920.714" cy="363.585" r="2.6" fill="#429457"/>
+<circle cx="994.571" cy="373.698" r="2.6" fill="#429457"/>
+<circle cx="1068.429" cy="374.041" r="2.6" fill="#429457"/>
+<circle cx="1142.286" cy="369.788" r="2.6" fill="#429457"/>
+<circle cx="1216.143" cy="363.176" r="2.6" fill="#429457"/>
+<circle cx="1290.000" cy="353.515" r="2.6" fill="#429457"/>
+<path d="M773.000 343.315 L846.857 390.310 L920.714 423.580 L994.571 432.156 L1068.429 429.374 L1142.286 417.647 L1216.143 408.198 L1290.000 397.217" fill="none" stroke="#429457" stroke-width="2.4"/>
+<circle cx="773.000" cy="343.315" r="2.6" fill="#429457"/>
+<circle cx="846.857" cy="390.310" r="2.6" fill="#429457"/>
+<circle cx="920.714" cy="423.580" r="2.6" fill="#429457"/>
+<circle cx="994.571" cy="432.156" r="2.6" fill="#429457"/>
+<circle cx="1068.429" cy="429.374" r="2.6" fill="#429457"/>
+<circle cx="1142.286" cy="417.647" r="2.6" fill="#429457"/>
+<circle cx="1216.143" cy="408.198" r="2.6" fill="#429457"/>
+<circle cx="1290.000" cy="397.217" r="2.6" fill="#429457"/>
+<path d="M773.000 307.164 L846.857 363.893 L920.714 382.259 L994.571 394.272 L1068.429 395.282 L1142.286 391.981 L1216.143 388.773 L1290.000 380.132" fill="none" stroke="#758d19" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="307.164" r="2.6" fill="#758d19"/>
+<circle cx="846.857" cy="363.893" r="2.6" fill="#758d19"/>
+<circle cx="920.714" cy="382.259" r="2.6" fill="#758d19"/>
+<circle cx="994.571" cy="394.272" r="2.6" fill="#758d19"/>
+<circle cx="1068.429" cy="395.282" r="2.6" fill="#758d19"/>
+<circle cx="1142.286" cy="391.981" r="2.6" fill="#758d19"/>
+<circle cx="1216.143" cy="388.773" r="2.6" fill="#758d19"/>
+<circle cx="1290.000" cy="380.132" r="2.6" fill="#758d19"/>
+<path d="M773.000 346.180 L846.857 395.254 L920.714 432.953 L994.571 443.102 L1068.429 436.595 L1142.286 423.653 L1216.143 413.390 L1290.000 401.479" fill="none" stroke="#758d19" stroke-width="2.4"/>
+<circle cx="773.000" cy="346.180" r="2.6" fill="#758d19"/>
+<circle cx="846.857" cy="395.254" r="2.6" fill="#758d19"/>
+<circle cx="920.714" cy="432.953" r="2.6" fill="#758d19"/>
+<circle cx="994.571" cy="443.102" r="2.6" fill="#758d19"/>
+<circle cx="1068.429" cy="436.595" r="2.6" fill="#758d19"/>
+<circle cx="1142.286" cy="423.653" r="2.6" fill="#758d19"/>
+<circle cx="1216.143" cy="413.390" r="2.6" fill="#758d19"/>
+<circle cx="1290.000" cy="401.479" r="2.6" fill="#758d19"/>
+<text x="60" y="558" font-size="23" font-weight="600">Tangential force</text>
+<text x="60" y="583" font-size="14" fill="#596764">RMSE (N)</text>
+<path d="M113 841.000H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="847.0" font-size="16" text-anchor="end" fill="#596764">3.6</text>
+<path d="M113 791.208H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="797.208" font-size="16" text-anchor="end" fill="#596764">3.7</text>
+<path d="M113 741.417H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="747.417" font-size="16" text-anchor="end" fill="#596764">3.8</text>
+<path d="M113 691.625H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="697.625" font-size="16" text-anchor="end" fill="#596764">3.9</text>
+<path d="M113 641.833H630" stroke="#e1e7df" stroke-width="1"/>
+<text x="101" y="647.833" font-size="16" text-anchor="end" fill="#596764">4.0</text>
+<text x="113.0" y="868" font-size="16" text-anchor="middle" fill="#596764">L1</text>
+<text x="186.857" y="868" font-size="16" text-anchor="middle" fill="#596764">L2</text>
+<text x="260.714" y="868" font-size="16" text-anchor="middle" fill="#596764">L3</text>
+<text x="334.571" y="868" font-size="16" text-anchor="middle" fill="#596764">L4</text>
+<text x="408.429" y="868" font-size="16" text-anchor="middle" fill="#596764">L5</text>
+<text x="482.286" y="868" font-size="16" text-anchor="middle" fill="#596764">L6</text>
+<text x="556.143" y="868" font-size="16" text-anchor="middle" fill="#596764">L7</text>
+<text x="630.0" y="868" font-size="16" text-anchor="middle" fill="#596764">L8</text>
+<text x="371.5" y="898" font-size="16" text-anchor="middle" fill="#596764">Action-decoder layer</text>
+<path d="M113.000 626.970 L186.857 673.844 L260.714 686.799 L334.571 691.039 L408.429 687.568 L482.286 682.263 L556.143 674.084 L630.000 667.597" fill="none" stroke="#60398b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="626.970" r="2.6" fill="#60398b"/>
+<circle cx="186.857" cy="673.844" r="2.6" fill="#60398b"/>
+<circle cx="260.714" cy="686.799" r="2.6" fill="#60398b"/>
+<circle cx="334.571" cy="691.039" r="2.6" fill="#60398b"/>
+<circle cx="408.429" cy="687.568" r="2.6" fill="#60398b"/>
+<circle cx="482.286" cy="682.263" r="2.6" fill="#60398b"/>
+<circle cx="556.143" cy="674.084" r="2.6" fill="#60398b"/>
+<circle cx="630.000" cy="667.597" r="2.6" fill="#60398b"/>
+<path d="M113.000 697.062 L186.857 750.898 L260.714 784.825 L334.571 786.254 L408.429 790.779 L482.286 786.246 L556.143 780.726 L630.000 773.770" fill="none" stroke="#60398b" stroke-width="2.4"/>
+<circle cx="113.000" cy="697.062" r="2.6" fill="#60398b"/>
+<circle cx="186.857" cy="750.898" r="2.6" fill="#60398b"/>
+<circle cx="260.714" cy="784.825" r="2.6" fill="#60398b"/>
+<circle cx="334.571" cy="786.254" r="2.6" fill="#60398b"/>
+<circle cx="408.429" cy="790.779" r="2.6" fill="#60398b"/>
+<circle cx="482.286" cy="786.246" r="2.6" fill="#60398b"/>
+<circle cx="556.143" cy="780.726" r="2.6" fill="#60398b"/>
+<circle cx="630.000" cy="773.770" r="2.6" fill="#60398b"/>
+<path d="M113.000 664.086 L186.857 713.267 L260.714 729.660 L334.571 729.985 L408.429 730.322 L482.286 726.080 L556.143 716.391 L630.000 704.078" fill="none" stroke="#3b679b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="664.086" r="2.6" fill="#3b679b"/>
+<circle cx="186.857" cy="713.267" r="2.6" fill="#3b679b"/>
+<circle cx="260.714" cy="729.660" r="2.6" fill="#3b679b"/>
+<circle cx="334.571" cy="729.985" r="2.6" fill="#3b679b"/>
+<circle cx="408.429" cy="730.322" r="2.6" fill="#3b679b"/>
+<circle cx="482.286" cy="726.080" r="2.6" fill="#3b679b"/>
+<circle cx="556.143" cy="716.391" r="2.6" fill="#3b679b"/>
+<circle cx="630.000" cy="704.078" r="2.6" fill="#3b679b"/>
+<path d="M113.000 700.274 L186.857 755.512 L260.714 788.793 L334.571 791.242 L408.429 796.282 L482.286 789.192 L556.143 783.612 L630.000 775.078" fill="none" stroke="#3b679b" stroke-width="2.4"/>
+<circle cx="113.000" cy="700.274" r="2.6" fill="#3b679b"/>
+<circle cx="186.857" cy="755.512" r="2.6" fill="#3b679b"/>
+<circle cx="260.714" cy="788.793" r="2.6" fill="#3b679b"/>
+<circle cx="334.571" cy="791.242" r="2.6" fill="#3b679b"/>
+<circle cx="408.429" cy="796.282" r="2.6" fill="#3b679b"/>
+<circle cx="482.286" cy="789.192" r="2.6" fill="#3b679b"/>
+<circle cx="556.143" cy="783.612" r="2.6" fill="#3b679b"/>
+<circle cx="630.000" cy="775.078" r="2.6" fill="#3b679b"/>
+<path d="M113.000 678.879 L186.857 736.652 L260.714 755.022 L334.571 755.420 L408.429 753.622 L482.286 748.906 L556.143 737.832 L630.000 723.410" fill="none" stroke="#19877e" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="678.879" r="2.6" fill="#19877e"/>
+<circle cx="186.857" cy="736.652" r="2.6" fill="#19877e"/>
+<circle cx="260.714" cy="755.022" r="2.6" fill="#19877e"/>
+<circle cx="334.571" cy="755.420" r="2.6" fill="#19877e"/>
+<circle cx="408.429" cy="753.622" r="2.6" fill="#19877e"/>
+<circle cx="482.286" cy="748.906" r="2.6" fill="#19877e"/>
+<circle cx="556.143" cy="737.832" r="2.6" fill="#19877e"/>
+<circle cx="630.000" cy="723.410" r="2.6" fill="#19877e"/>
+<path d="M113.000 707.852 L186.857 759.668 L260.714 796.357 L334.571 800.455 L408.429 808.698 L482.286 805.618 L556.143 801.606 L630.000 795.460" fill="none" stroke="#19877e" stroke-width="2.4"/>
+<circle cx="113.000" cy="707.852" r="2.6" fill="#19877e"/>
+<circle cx="186.857" cy="759.668" r="2.6" fill="#19877e"/>
+<circle cx="260.714" cy="796.357" r="2.6" fill="#19877e"/>
+<circle cx="334.571" cy="800.455" r="2.6" fill="#19877e"/>
+<circle cx="408.429" cy="808.698" r="2.6" fill="#19877e"/>
+<circle cx="482.286" cy="805.618" r="2.6" fill="#19877e"/>
+<circle cx="556.143" cy="801.606" r="2.6" fill="#19877e"/>
+<circle cx="630.000" cy="795.460" r="2.6" fill="#19877e"/>
+<path d="M113.000 675.813 L186.857 730.581 L260.714 755.632 L334.571 761.174 L408.429 761.760 L482.286 763.264 L556.143 763.260 L630.000 752.644" fill="none" stroke="#429457" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="675.813" r="2.6" fill="#429457"/>
+<circle cx="186.857" cy="730.581" r="2.6" fill="#429457"/>
+<circle cx="260.714" cy="755.632" r="2.6" fill="#429457"/>
+<circle cx="334.571" cy="761.174" r="2.6" fill="#429457"/>
+<circle cx="408.429" cy="761.760" r="2.6" fill="#429457"/>
+<circle cx="482.286" cy="763.264" r="2.6" fill="#429457"/>
+<circle cx="556.143" cy="763.260" r="2.6" fill="#429457"/>
+<circle cx="630.000" cy="752.644" r="2.6" fill="#429457"/>
+<path d="M113.000 715.018 L186.857 769.711 L260.714 805.499 L334.571 809.853 L408.429 815.488 L482.286 812.955 L556.143 808.876 L630.000 803.452" fill="none" stroke="#429457" stroke-width="2.4"/>
+<circle cx="113.000" cy="715.018" r="2.6" fill="#429457"/>
+<circle cx="186.857" cy="769.711" r="2.6" fill="#429457"/>
+<circle cx="260.714" cy="805.499" r="2.6" fill="#429457"/>
+<circle cx="334.571" cy="809.853" r="2.6" fill="#429457"/>
+<circle cx="408.429" cy="815.488" r="2.6" fill="#429457"/>
+<circle cx="482.286" cy="812.955" r="2.6" fill="#429457"/>
+<circle cx="556.143" cy="808.876" r="2.6" fill="#429457"/>
+<circle cx="630.000" cy="803.452" r="2.6" fill="#429457"/>
+<path d="M113.000 693.807 L186.857 753.895 L260.714 778.363 L334.571 785.176 L408.429 786.282 L482.286 790.576 L556.143 785.868 L630.000 776.804" fill="none" stroke="#758d19" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="113.000" cy="693.807" r="2.6" fill="#758d19"/>
+<circle cx="186.857" cy="753.895" r="2.6" fill="#758d19"/>
+<circle cx="260.714" cy="778.363" r="2.6" fill="#758d19"/>
+<circle cx="334.571" cy="785.176" r="2.6" fill="#758d19"/>
+<circle cx="408.429" cy="786.282" r="2.6" fill="#758d19"/>
+<circle cx="482.286" cy="790.576" r="2.6" fill="#758d19"/>
+<circle cx="556.143" cy="785.868" r="2.6" fill="#758d19"/>
+<circle cx="630.000" cy="776.804" r="2.6" fill="#758d19"/>
+<path d="M113.000 723.507 L186.857 774.125 L260.714 813.804 L334.571 818.846 L408.429 825.736 L482.286 823.407 L556.143 818.496 L630.000 809.944" fill="none" stroke="#758d19" stroke-width="2.4"/>
+<circle cx="113.000" cy="723.507" r="2.6" fill="#758d19"/>
+<circle cx="186.857" cy="774.125" r="2.6" fill="#758d19"/>
+<circle cx="260.714" cy="813.804" r="2.6" fill="#758d19"/>
+<circle cx="334.571" cy="818.846" r="2.6" fill="#758d19"/>
+<circle cx="408.429" cy="825.736" r="2.6" fill="#758d19"/>
+<circle cx="482.286" cy="823.407" r="2.6" fill="#758d19"/>
+<circle cx="556.143" cy="818.496" r="2.6" fill="#758d19"/>
+<circle cx="630.000" cy="809.944" r="2.6" fill="#758d19"/>
+<text x="720" y="558" font-size="23" font-weight="600">3D force</text>
+<text x="720" y="583" font-size="14" fill="#596764">RMSE (N)</text>
+<path d="M773 841.000H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="847.0" font-size="16" text-anchor="end" fill="#596764">3.7</text>
+<path d="M773 781.250H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="787.25" font-size="16" text-anchor="end" fill="#596764">3.9</text>
+<path d="M773 721.500H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="727.5" font-size="16" text-anchor="end" fill="#596764">4.1</text>
+<path d="M773 661.750H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="667.75" font-size="16" text-anchor="end" fill="#596764">4.3</text>
+<path d="M773 602.000H1290" stroke="#e1e7df" stroke-width="1"/>
+<text x="761" y="608.0" font-size="16" text-anchor="end" fill="#596764">4.5</text>
+<text x="773.0" y="868" font-size="16" text-anchor="middle" fill="#596764">L1</text>
+<text x="846.857" y="868" font-size="16" text-anchor="middle" fill="#596764">L2</text>
+<text x="920.714" y="868" font-size="16" text-anchor="middle" fill="#596764">L3</text>
+<text x="994.571" y="868" font-size="16" text-anchor="middle" fill="#596764">L4</text>
+<text x="1068.429" y="868" font-size="16" text-anchor="middle" fill="#596764">L5</text>
+<text x="1142.286" y="868" font-size="16" text-anchor="middle" fill="#596764">L6</text>
+<text x="1216.143" y="868" font-size="16" text-anchor="middle" fill="#596764">L7</text>
+<text x="1290.0" y="868" font-size="16" text-anchor="middle" fill="#596764">L8</text>
+<text x="1031.5" y="898" font-size="16" text-anchor="middle" fill="#596764">Action-decoder layer</text>
+<path d="M773.000 638.437 L846.857 662.303 L920.714 667.839 L994.571 670.046 L1068.429 669.213 L1142.286 669.354 L1216.143 665.444 L1290.000 660.165" fill="none" stroke="#60398b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="638.437" r="2.6" fill="#60398b"/>
+<circle cx="846.857" cy="662.303" r="2.6" fill="#60398b"/>
+<circle cx="920.714" cy="667.839" r="2.6" fill="#60398b"/>
+<circle cx="994.571" cy="670.046" r="2.6" fill="#60398b"/>
+<circle cx="1068.429" cy="669.213" r="2.6" fill="#60398b"/>
+<circle cx="1142.286" cy="669.354" r="2.6" fill="#60398b"/>
+<circle cx="1216.143" cy="665.444" r="2.6" fill="#60398b"/>
+<circle cx="1290.000" cy="660.165" r="2.6" fill="#60398b"/>
+<path d="M773.000 698.665 L846.857 745.067 L920.714 786.638 L994.571 800.901 L1068.429 788.596 L1142.286 776.997 L1216.143 766.926 L1290.000 756.089" fill="none" stroke="#60398b" stroke-width="2.4"/>
+<circle cx="773.000" cy="698.665" r="2.6" fill="#60398b"/>
+<circle cx="846.857" cy="745.067" r="2.6" fill="#60398b"/>
+<circle cx="920.714" cy="786.638" r="2.6" fill="#60398b"/>
+<circle cx="994.571" cy="800.901" r="2.6" fill="#60398b"/>
+<circle cx="1068.429" cy="788.596" r="2.6" fill="#60398b"/>
+<circle cx="1142.286" cy="776.997" r="2.6" fill="#60398b"/>
+<circle cx="1216.143" cy="766.926" r="2.6" fill="#60398b"/>
+<circle cx="1290.000" cy="756.089" r="2.6" fill="#60398b"/>
+<path d="M773.000 660.016 L846.857 693.186 L920.714 700.652 L994.571 708.163 L1068.429 703.596 L1142.286 701.680 L1216.143 695.144 L1290.000 684.930" fill="none" stroke="#3b679b" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="660.016" r="2.6" fill="#3b679b"/>
+<circle cx="846.857" cy="693.186" r="2.6" fill="#3b679b"/>
+<circle cx="920.714" cy="700.652" r="2.6" fill="#3b679b"/>
+<circle cx="994.571" cy="708.163" r="2.6" fill="#3b679b"/>
+<circle cx="1068.429" cy="703.596" r="2.6" fill="#3b679b"/>
+<circle cx="1142.286" cy="701.680" r="2.6" fill="#3b679b"/>
+<circle cx="1216.143" cy="695.144" r="2.6" fill="#3b679b"/>
+<circle cx="1290.000" cy="684.930" r="2.6" fill="#3b679b"/>
+<path d="M773.000 708.359 L846.857 749.862 L920.714 790.667 L994.571 803.550 L1068.429 790.864 L1142.286 778.179 L1216.143 769.796 L1290.000 756.851" fill="none" stroke="#3b679b" stroke-width="2.4"/>
+<circle cx="773.000" cy="708.359" r="2.6" fill="#3b679b"/>
+<circle cx="846.857" cy="749.862" r="2.6" fill="#3b679b"/>
+<circle cx="920.714" cy="790.667" r="2.6" fill="#3b679b"/>
+<circle cx="994.571" cy="803.550" r="2.6" fill="#3b679b"/>
+<circle cx="1068.429" cy="790.864" r="2.6" fill="#3b679b"/>
+<circle cx="1142.286" cy="778.179" r="2.6" fill="#3b679b"/>
+<circle cx="1216.143" cy="769.796" r="2.6" fill="#3b679b"/>
+<circle cx="1290.000" cy="756.851" r="2.6" fill="#3b679b"/>
+<path d="M773.000 681.367 L846.857 719.327 L920.714 744.117 L994.571 744.352 L1068.429 736.667 L1142.286 728.847 L1216.143 719.047 L1290.000 706.596" fill="none" stroke="#19877e" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="681.367" r="2.6" fill="#19877e"/>
+<circle cx="846.857" cy="719.327" r="2.6" fill="#19877e"/>
+<circle cx="920.714" cy="744.117" r="2.6" fill="#19877e"/>
+<circle cx="994.571" cy="744.352" r="2.6" fill="#19877e"/>
+<circle cx="1068.429" cy="736.667" r="2.6" fill="#19877e"/>
+<circle cx="1142.286" cy="728.847" r="2.6" fill="#19877e"/>
+<circle cx="1216.143" cy="719.047" r="2.6" fill="#19877e"/>
+<circle cx="1290.000" cy="706.596" r="2.6" fill="#19877e"/>
+<path d="M773.000 715.551 L846.857 759.198 L920.714 803.342 L994.571 811.420 L1068.429 799.089 L1142.286 786.671 L1216.143 778.301 L1290.000 766.193" fill="none" stroke="#19877e" stroke-width="2.4"/>
+<circle cx="773.000" cy="715.551" r="2.6" fill="#19877e"/>
+<circle cx="846.857" cy="759.198" r="2.6" fill="#19877e"/>
+<circle cx="920.714" cy="803.342" r="2.6" fill="#19877e"/>
+<circle cx="994.571" cy="811.420" r="2.6" fill="#19877e"/>
+<circle cx="1068.429" cy="799.089" r="2.6" fill="#19877e"/>
+<circle cx="1142.286" cy="786.671" r="2.6" fill="#19877e"/>
+<circle cx="1216.143" cy="778.301" r="2.6" fill="#19877e"/>
+<circle cx="1290.000" cy="766.193" r="2.6" fill="#19877e"/>
+<path d="M773.000 676.810 L846.857 715.015 L920.714 734.947 L994.571 742.381 L1068.429 739.304 L1142.286 735.643 L1216.143 730.706 L1290.000 723.422" fill="none" stroke="#429457" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="676.810" r="2.6" fill="#429457"/>
+<circle cx="846.857" cy="715.015" r="2.6" fill="#429457"/>
+<circle cx="920.714" cy="734.947" r="2.6" fill="#429457"/>
+<circle cx="994.571" cy="742.381" r="2.6" fill="#429457"/>
+<circle cx="1068.429" cy="739.304" r="2.6" fill="#429457"/>
+<circle cx="1142.286" cy="735.643" r="2.6" fill="#429457"/>
+<circle cx="1216.143" cy="730.706" r="2.6" fill="#429457"/>
+<circle cx="1290.000" cy="723.422" r="2.6" fill="#429457"/>
+<path d="M773.000 726.627 L846.857 769.096 L920.714 811.707 L994.571 821.817 L1068.429 806.707 L1142.286 794.312 L1216.143 782.557 L1290.000 769.531" fill="none" stroke="#429457" stroke-width="2.4"/>
+<circle cx="773.000" cy="726.627" r="2.6" fill="#429457"/>
+<circle cx="846.857" cy="769.096" r="2.6" fill="#429457"/>
+<circle cx="920.714" cy="811.707" r="2.6" fill="#429457"/>
+<circle cx="994.571" cy="821.817" r="2.6" fill="#429457"/>
+<circle cx="1068.429" cy="806.707" r="2.6" fill="#429457"/>
+<circle cx="1142.286" cy="794.312" r="2.6" fill="#429457"/>
+<circle cx="1216.143" cy="782.557" r="2.6" fill="#429457"/>
+<circle cx="1290.000" cy="769.531" r="2.6" fill="#429457"/>
+<path d="M773.000 694.882 L846.857 740.527 L920.714 755.881 L994.571 764.087 L1068.429 765.187 L1142.286 757.486 L1216.143 751.356 L1290.000 741.138" fill="none" stroke="#758d19" stroke-width="2.4" stroke-dasharray="7 5"/>
+<circle cx="773.000" cy="694.882" r="2.6" fill="#758d19"/>
+<circle cx="846.857" cy="740.527" r="2.6" fill="#758d19"/>
+<circle cx="920.714" cy="755.881" r="2.6" fill="#758d19"/>
+<circle cx="994.571" cy="764.087" r="2.6" fill="#758d19"/>
+<circle cx="1068.429" cy="765.187" r="2.6" fill="#758d19"/>
+<circle cx="1142.286" cy="757.486" r="2.6" fill="#758d19"/>
+<circle cx="1216.143" cy="751.356" r="2.6" fill="#758d19"/>
+<circle cx="1290.000" cy="741.138" r="2.6" fill="#758d19"/>
+<path d="M773.000 732.673 L846.857 775.131 L920.714 819.285 L994.571 825.889 L1068.429 811.489 L1142.286 798.355 L1216.143 785.910 L1290.000 774.987" fill="none" stroke="#758d19" stroke-width="2.4"/>
+<circle cx="773.000" cy="732.673" r="2.6" fill="#758d19"/>
+<circle cx="846.857" cy="775.131" r="2.6" fill="#758d19"/>
+<circle cx="920.714" cy="819.285" r="2.6" fill="#758d19"/>
+<circle cx="994.571" cy="825.889" r="2.6" fill="#758d19"/>
+<circle cx="1068.429" cy="811.489" r="2.6" fill="#758d19"/>
+<circle cx="1142.286" cy="798.355" r="2.6" fill="#758d19"/>
+<circle cx="1216.143" cy="785.910" r="2.6" fill="#758d19"/>
+<circle cx="1290.000" cy="774.987" r="2.6" fill="#758d19"/>
+<text x="60" y="945" font-size="14" fill="#596764">Figure 9 data from the anonymous manuscript. Identical IID probe test episodes; linear ridge probes.</text>
+</g></svg>

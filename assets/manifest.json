@@ -1,0 +1,115 @@
+{
+  "manuscript": {
+    "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+    "source_sha256": "2d71a9f28f06d47ca08eb37af89852f96d3bbdf726a76344d931337a35708f5b",
+    "pages": 12,
+    "status": "Anonymous review manuscript"
+  },
+  "assets": {
+    "images/method.webp": {
+      "source": "Manuscript Figure 1, page 3; embedded image.",
+      "width": 2115,
+      "height": 743,
+      "sha256": "071356543bb81735af1f1f629f9b056b4c45036cc45af7e2e7f8a086f825e818"
+    },
+    "images/tasks.webp": {
+      "source": "Manuscript Figure 2, page 5; embedded image.",
+      "width": 3200,
+      "height": 584,
+      "sha256": "5464d280000599716a3acce724784c1238ac083fce3bfc8d83d712f9b50de379"
+    },
+    "images/results.webp": {
+      "source": "Manuscript Figure 4, page 6; embedded image.",
+      "width": 3200,
+      "height": 769,
+      "sha256": "3f5dea1ff3b3101efda0a67afa6b7f463c0da7c111ee26905f0d6b14d6e4a8f3"
+    },
+    "images/interface.webp": {
+      "source": "Manuscript Figure 5, page 7; embedded image.",
+      "width": 2000,
+      "height": 728,
+      "sha256": "e6bead4544e21853d296bfea98c5570834a8666583bd12f46d24b33871b87556"
+    },
+    "images/adaptation.webp": {
+      "source": "Manuscript Figure 7, page 8; rendered vector crop.",
+      "width": 2400,
+      "height": 592,
+      "sha256": "76ebe00f3092971ca695d4d39b32911c34a43a433c82e50fc8e00110673e3a9c"
+    },
+    "images/mass.webp": {
+      "source": "Manuscript Figure 8, page 8; rendered vector crop.",
+      "width": 1800,
+      "height": 753,
+      "sha256": "58605c9c8de2f1ac316733718f48efe43a03de3c66e87be7abb86b2b289c1a2e"
+    },
+    "images/contact.webp": {
+      "source": "Manuscript Figure 9, page 9; rendered vector crop.",
+      "width": 2400,
+      "height": 537,
+      "sha256": "fdcbd2b4034ecb3a4a5c8f43eb8010ab713df86b3d4d91873e9213516ce66550"
+    },
+    "images/stability.webp": {
+      "source": "Manuscript Figure 6, page 7; rendered vector crop.",
+      "width": 2800,
+      "height": 627,
+      "sha256": "6dbae9e3746916f4253afba86ec11df9c356a55403f1297df39b5c56d5b40cde"
+    },
+    "paper.pdf": {
+      "source": "Supplied anonymous manuscript; document metadata removed.",
+      "sha256": "9cfe8f60f8889cb083575cd743c91099b33f017ff73c1b672d63a5ec6dcf7fb8"
+    },
+    "images/pose-poster.webp": {
+      "source": "Frame at 5 s of pose.mp4.",
+      "width": 720,
+      "height": 720,
+      "sha256": "606a004fac4af4ba9a7263f6bd46cf165a3ba73c495bc11ac4dc47dab79f0e5d"
+    },
+    "videos/pose.mp4": {
+      "source": "MuJoCo replay of a collected demonstration trajectory.",
+      "role": "Task illustration; not an evaluated adapted-policy rollout.",
+      "source_sha256": "c340357e7fd27d8a69461c96b7ac0285efaffa7c31a7987c402ddd372b71a22a",
+      "sha256": "4d90072b9dccb2d75b0f646fdae4bafe2a96d52b58e75b936bbc682913d5d129",
+      "duration_seconds": 19.966667,
+      "processing": "Source timing retained; top 0 pixels cropped; aspect-preserving padding to 720x720; metadata removed."
+    },
+    "images/door-poster.webp": {
+      "source": "Frame at 3.333333 s of door.mp4.",
+      "width": 720,
+      "height": 720,
+      "sha256": "27324e04b0948e9e98de0b194201c740f3460da0c495b194271a48b15d27da0f"
+    },
+    "videos/door.mp4": {
+      "source": "MuJoCo replay of a collected demonstration trajectory.",
+      "role": "Task illustration; not an evaluated adapted-policy rollout.",
+      "source_sha256": "1c5796fe610dc371cfe9e9d2995416d8c24e8e6ef5257d355ff7beeebbe97787",
+      "sha256": "d606d015b356eacc271eac86c83eb8c20080bcde4830988286021140d8e8c6e4",
+      "duration_seconds": 6.166667,
+      "processing": "Source timing retained; top 40 pixels cropped; aspect-preserving padding to 720x720; H.264 CRF 18; metadata removed."
+    },
+    "images/assembly-poster.webp": {
+      "source": "Frame at 5 s of assembly.mp4.",
+      "width": 720,
+      "height": 720,
+      "sha256": "7dd1814491f495f049bd58126e8cb204d3beaa40ba53ed6a651726d990853c3d"
+    },
+    "videos/assembly.mp4": {
+      "source": "MuJoCo replay of a collected demonstration trajectory.",
+      "role": "Task illustration; not an evaluated adapted-policy rollout.",
+      "source_sha256": "257c7344bbdd6d919c27cb4b02991453499d25182ee2d333adb1e249fdcf8875",
+      "sha256": "fcf0440b05800921cd34146c5e85990e8109c95e0a863f61c2bef1839a523b46",
+      "duration_seconds": 8.633333,
+      "processing": "Source timing retained; top 40 pixels cropped; aspect-preserving padding to 720x720; metadata removed."
+    },
+    "data/contact-probes.json": {
+      "source": "Manuscript Figure 9. Numerical probe results verified against the plotted curves.",
+      "sha256": "4c3605d6a1169b609b352b97b33267857d9190c6a55759205db806a48ec6c5e8",
+      "verified_points": 320
+    },
+    "images/contact.svg": {
+      "source": "Manuscript Figure 9, redrawn as a two-by-two vector layout from verified numerical data.",
+      "width": 1360,
+      "height": 960,
+      "sha256": "3b5f1e5dfc231484f5fa7b5f71dd511896b4d34e4d9f71192505a0e2096d4cce"
+    }
+  }
+}
