@@ -26,6 +26,35 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def flatten_on_white(image):
+    """Composite any transparency onto white, as the figure appears on the PDF page.
+
+    A plain RGB conversion would expose the colour stored under transparent pixels,
+    which is usually black.
+    """
+    if image.mode in ("RGBA", "LA") or (image.mode == "P" and "transparency" in image.info):
+        image = image.convert("RGBA")
+        background = Image.new("RGB", image.size, "white")
+        background.paste(image, mask=image.getchannel("A"))
+        return background
+    return image.convert("RGB")
+
+
+def embedded_figure(document, page_number):
+    """Return the largest raster image on a page, with its soft mask applied as alpha."""
+    page = document[page_number - 1]
+    info = max(page.get_image_info(xrefs=True), key=lambda x: x["width"] * x["height"])
+    xref = info["xref"]
+    image = Image.open(io.BytesIO(document.extract_image(xref)["image"]))
+    # PDF stores transparency in a separate soft-mask image; extract_image() omits it.
+    smask = next((item[1] for item in page.get_images(full=True) if item[0] == xref), 0)
+    if smask:
+        alpha = Image.open(io.BytesIO(document.extract_image(smask)["image"])).convert("L")
+        image = image.convert("RGB")
+        image.putalpha(alpha.resize(image.size))
+    return image
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--paper", type=Path, required=True)
@@ -64,7 +93,7 @@ def main():
                 manifest["assets"][name] = previous[name]
 
     def save_image(image, name, width, source):
-        image = image.convert("RGB")
+        image = flatten_on_white(image)
         if image.width > width:
             image = image.resize((width, round(image.height * width / image.width)),
                                  Image.Resampling.LANCZOS)
@@ -83,11 +112,7 @@ def main():
         ("results", 6, 3200, 4),
         ("interface", 7, 2000, 5),
     ]:
-        page = document[page_number - 1]
-        candidates = page.get_image_info(xrefs=True)
-        info = max(candidates, key=lambda x: x["width"] * x["height"])
-        data = document.extract_image(info["xref"])
-        save_image(Image.open(io.BytesIO(data["image"])), name, width,
+        save_image(embedded_figure(document, page_number), name, width,
                    f"Manuscript Figure {figure}, page {page_number}; embedded image.")
 
     # Render vector figures at publication quality, with no captions or line numbers.
