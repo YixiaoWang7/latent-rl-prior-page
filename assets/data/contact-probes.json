@@ -1,6 +1,6 @@
 {
   "source": "Manuscript Figure 9. Numerical probe results verified against the plotted curves.",
-  "manuscript_sha256": "9cfe8f60f8889cb083575cd743c91099b33f017ff73c1b672d63a5ec6dcf7fb8",
+  "manuscript_sha256": "c635036c68b3b52e3670e05af773ab4cd8dc33bd38a3c1393b7445335c83ea8e",
   "units": "N",
   "metric": "Root mean squared error (RMSE); lower is better.",
   "aggregation": "Per-output RMSE averaged over outputs, then over three policy seeds.",

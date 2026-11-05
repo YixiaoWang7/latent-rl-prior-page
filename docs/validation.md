@@ -54,3 +54,12 @@ per finding.
   edge for all section headings. No console errors or external requests were observed.
 - `scripts/validate_site.py` now also rejects inline styles, inline scripts, and inline event
   handlers, which the CSP would block.
+
+## Authored preprint PDF (2026-11-05)
+
+`assets/paper.pdf` is now the authored preprint, published byte-for-byte as supplied. Compared with the
+review PDF, only the title block, the internship footnote, the abstract's final sentence, and line
+numbering changed. The four raster figures decode to identical pixels; the vector figures render
+identically apart from anti-aliasing. `scripts/verify_contact_data.py` confirmed all 320 contact-chart
+values against the new Figure 9 (maximum error 0.00002 PDF points) before the hashes were updated.
+The PDF has no attachments or local paths; its only file references are relative figure names.

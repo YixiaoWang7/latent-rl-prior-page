@@ -5,11 +5,9 @@ figures, videos, and the PDF stored locally; it has no build step, runtime depen
 or analytics. Outbound links are limited to the hosts in `ALLOWED_LINK_HOSTS` in
 `scripts/validate_site.py`.
 
-**Pending until the arXiv version exists:** the arXiv button (currently a grey “coming soon” pill), the arXiv BibTeX entry,
-and the PDF button. `assets/paper.pdf` is the anonymous review version; it stays in the repository
-because the contact-chart data is verified against it, but the page does not link it. To add the arXiv
-PDF, see “Replacing the PDF”. If you mark something as unfinished with a `TODO-NAME` marker, validation
-and deployment fail until it is resolved. The anonymous review version of the page is kept,
+`assets/paper.pdf` is the authored preprint, published unmodified. **Pending until the arXiv version
+exists:** the arXiv button (currently a grey “coming soon” pill) and the arXiv BibTeX entry. If you mark
+something as unfinished with a `TODO-NAME` marker, validation and deployment fail until it is resolved. The anonymous review version of the page is kept,
 unpublished, in `.local-backups/2026-11-05-anonymous-version/`.
 
 The page follows a standard academic project-page layout: a title block with paper links, a sticky
@@ -113,10 +111,18 @@ after re-importing the manuscript; packaging rejects chart data tied to a differ
 ## Replacing the PDF
 
 `assets/manifest.json` stores a SHA-256 hash for every asset, and `assets/data/contact-probes.json`
-records the hash of the PDF that its Figure 9 values were checked against. After copying the arXiv
-PDF to `assets/paper.pdf`, re-run `scripts/export_contact_data.py` (which needs the original probe
-files), or verify that Figure 9 is unchanged. Then update both hashes, run `scripts/validate_site.py`,
-and repackage.
+records the hash of the PDF that its Figure 9 values were checked against. When only the text around
+the figures changes (authors, arXiv header), adopt the new PDF with one command (needs NumPy and
+PyMuPDF in a temporary environment):
+
+```bash
+python scripts/verify_contact_data.py --paper /path/to/new.pdf --adopt
+```
+
+It checks all 320 chart values against the new PDF's Figure 9, copies the PDF to `assets/paper.pdf`
+unmodified, and updates both hashes. If Figure 9 itself changed, re-run `scripts/export_contact_data.py`
+with the original probe files instead. If other figures changed, re-import them with
+`scripts/import_assets.py`.
 
 Do not upload this public version to the anonymous review deployments (Anonymous GitHub or the
 CloudFront stack), because a link to those may appear in the review submission.

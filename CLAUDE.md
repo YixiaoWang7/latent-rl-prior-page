@@ -8,9 +8,9 @@ The **public project page** for the arXiv paper *Latent RL Priors for Data-Effic
 Manipulation*. It is plain HTML/CSS/JS with no build step, no runtime dependencies, and every asset
 (figures, videos, PDF, chart data) stored locally. It is published with GitHub Pages.
 
-Authors and affiliations come from the preprint title block in the paper's LaTeX source. Still pending
-until the arXiv version exists: the arXiv link (a `.link-pending` pill), the arXiv BibTeX, and a PDF link
-(`assets/paper.pdf` is the anonymous review PDF, kept only for chart-data provenance and not linked). Fill these only from information the user
+Authors and affiliations come from the preprint title block in the paper's LaTeX source. `assets/paper.pdf` is the authored
+preprint PDF, published unmodified. Still pending until the arXiv version exists: the arXiv link (a
+`.link-pending` pill) and the arXiv BibTeX. Fill these only from information the user
 provides; never invent author names, affiliations, or IDs. Any `TODO-NAME` marker in `index.html` fails
 validation and blocks deployment. The anonymous review version is kept unpublished in
 `.local-backups/2026-11-05-anonymous-version/`; never deploy the public page to the anonymous hosts
@@ -103,8 +103,8 @@ changing these.
   Wording must not imply otherwise.
 - Code/dataset cards stay "planned release" until real URLs are provided.
 - `private/` (exporter verification reports) and `dist/` are gitignored and must never be published.
-- Replacing `assets/paper.pdf` requires updating its hash in `assets/manifest.json` and re-verifying
-  `contact-probes.json` → `manuscript_sha256` against the new PDF (see README, "Replacing the PDF").
+- Replace `assets/paper.pdf` only with `scripts/verify_contact_data.py --paper NEW.pdf --adopt`. It
+  checks Figure 9 against the chart data, copies the PDF, and updates both hashes (needs NumPy and PyMuPDF).
 
 ## Deployment
 

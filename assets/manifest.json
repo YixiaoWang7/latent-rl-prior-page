@@ -1,9 +1,9 @@
 {
   "manuscript": {
     "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
-    "source_sha256": "2d71a9f28f06d47ca08eb37af89852f96d3bbdf726a76344d931337a35708f5b",
+    "source_sha256": "c635036c68b3b52e3670e05af773ab4cd8dc33bd38a3c1393b7445335c83ea8e",
     "pages": 12,
-    "status": "Anonymous review manuscript"
+    "status": "Preprint with authors"
   },
   "assets": {
     "images/method.webp": {
@@ -55,8 +55,8 @@
       "sha256": "6dbae9e3746916f4253afba86ec11df9c356a55403f1297df39b5c56d5b40cde"
     },
     "paper.pdf": {
-      "source": "Supplied anonymous manuscript; document metadata removed.",
-      "sha256": "9cfe8f60f8889cb083575cd743c91099b33f017ff73c1b672d63a5ec6dcf7fb8"
+      "source": "Preprint with authors PDF, published unmodified.",
+      "sha256": "c635036c68b3b52e3670e05af773ab4cd8dc33bd38a3c1393b7445335c83ea8e"
     },
     "images/pose-poster.webp": {
       "source": "Frame at 5 s of pose.mp4.",
@@ -102,7 +102,7 @@
     },
     "data/contact-probes.json": {
       "source": "Manuscript Figure 9. Numerical probe results verified against the plotted curves.",
-      "sha256": "4c3605d6a1169b609b352b97b33267857d9190c6a55759205db806a48ec6c5e8",
+      "sha256": "190ac0d13282638b826461ed2f4850a3e4e551c0bf2265e9a661dc5c6cc5969a",
       "verified_points": 320
     },
     "images/contact.svg": {
